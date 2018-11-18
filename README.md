@@ -1,4 +1,4 @@
- ination:
+Explaination:
 
 	The traditional implementation uses the texture of surrounding areas and fill the area but it does not usually produce good results, so we used a combination of Object Detection and surrounding textures to get the desired output.
 
@@ -33,10 +33,11 @@ Step 4:
 
 ----------------------------------------------------------------
 
-Best Performance
+Best Performance:
+
 	This model was trained on the Places2 dataset and thus best performance is for natural outdoor images.
-	While the model works on images of any size with arbitrary holes, we trained it on images with the smallest edges in the [256, 384] pixel range and random holes in the [96, 128] pixel range. Our model will work best on images with holes of those sizes.
-	Significantly large holes or extrapolation when the holes are at the border of images may fail to be filled in due to limited spatial support of the model.
+	While the model works on images of any size with holes, we trained it on images with the smallest edges in the [256, 384] pixel 	range and random holes in the [96, 128] pixel range. Our model will work best on images with holes of those sizes.
+	Significantly large holes or extrapolation when the holes are at the border of images may fail to be filled in due to limited 		spatial support of the model.
 
 This code provides an extension to the the research paper:
 
