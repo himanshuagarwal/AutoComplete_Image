@@ -37,7 +37,9 @@ Output can be found in output Directory
 <h2>Best Performance:</h2>
 
 -This model was trained on the Places2 dataset and thus best performance is for natural outdoor images.
+
 -While the model works on images of any size with holes, we trained it on images with the smallest edges in the [256, 384] pixel 	range and random holes in the [96, 128] pixel range. Our model will work best on images with holes of those sizes.
+
 -Significantly large holes or extrapolation when the holes are at the border of images may fail to be filled in due to limited 		spatial support of the model.
 
 This code provides an extension to the the research paper:
